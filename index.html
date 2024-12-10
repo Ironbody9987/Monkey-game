@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Monkey Game</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-image: url('all project/pic/cute-banana-fruit-seamless-pattern-background-vector.jpg');
+            background-size: cover;
+            height: 100vh;
+        }
+        
+        h1 {
+            margin: 20px 0;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+        
+        #game {
+            border: 2px solid #000;
+        }
+        
+        #resetButton {
+            margin-top: 20px;
+            padding: 12px 25px;
+            font-size: 18px;
+            font-weight: bold;
+            background: linear-gradient(135deg, #f06836, #ff758c);
+            color: white;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        #resetButton:hover {
+            background: linear-gradient(135deg, #ff758c, #ff7eb3);
+            transform: scale(1.1);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+        
+        #resetButton:active {
+            transform: scale(1);
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Game Monkey Eat Banana</h1>
+    <canvas id="game" width="400" height="400"></canvas>
+    <button id="resetButton">Reset Game</button>
+
+    <script src="/game.js"></script>
+</body>
+
+</html>
